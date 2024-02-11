@@ -16,6 +16,7 @@
 		61C5BAFA2B0E703B00E1450A /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5BAF92B0E703B00E1450A /* ShopViewModel.swift */; };
 		61C5BAFD2B0E70FD00E1450A /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5BAFC2B0E70FD00E1450A /* ProductViewModel.swift */; };
 		61C5BAFF2B0E743400E1450A /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5BAFE2B0E743400E1450A /* ProductListView.swift */; };
+		61EB94292B78BD2200532BA2 /* ShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EB94282B78BD2200532BA2 /* ShopListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		61C5BAF92B0E703B00E1450A /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		61C5BAFC2B0E70FD00E1450A /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		61C5BAFE2B0E743400E1450A /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		61EB94282B78BD2200532BA2 /* ShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				61C5BAE62B0E6A1500E1450A /* ContentView.swift */,
 				61C5BAFE2B0E743400E1450A /* ProductListView.swift */,
+				61EB94282B78BD2200532BA2 /* ShopListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				61C5BAFD2B0E70FD00E1450A /* ProductViewModel.swift in Sources */,
 				61C5BAE72B0E6A1500E1450A /* ContentView.swift in Sources */,
 				61C5BAE52B0E6A1500E1450A /* Onlin_ShopApp.swift in Sources */,
+				61EB94292B78BD2200532BA2 /* ShopListView.swift in Sources */,
 				61C5BAFA2B0E703B00E1450A /* ShopViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
