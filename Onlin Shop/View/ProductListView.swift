@@ -10,7 +10,9 @@ struct ProductListView: View {
     
     var body: some View {
         List(productViewModel.products) { product in
-            Text(product.title)
+            NavigationLink(destination: ProductDetailsView(productId: product.id)) {
+                Text(product.title)
+            }
         }
         .navigationTitle("\(productViewModel.shopId) Products")
     }

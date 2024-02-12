@@ -84,4 +84,12 @@ extension Product {
         Product(id: 6, shopId: 9, title: "Product 6", description: "desription", price: 1.0, category: "Category"),
         Product(id: 7, shopId: 9, title: "Product 7", description: "desription", price: 1.0, category: "Category"),
     ]
+    
+    func filter(shopId: Int) -> [Product] {
+        return Product.testData.filter { $0.shopId == shopId }
+    }
+    
+    func find(productId: Int) -> Product? {
+        return Product.testData.first { $0.id == productId }
+    }
 }
