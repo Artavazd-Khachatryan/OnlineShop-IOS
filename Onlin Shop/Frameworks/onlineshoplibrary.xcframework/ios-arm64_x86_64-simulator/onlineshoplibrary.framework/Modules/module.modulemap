@@ -1,0 +1,6 @@
+framework module onlineshoplibrary {
+    umbrella header "onlineshoplibrary.h"
+
+    export *
+    module * { export * }
+}

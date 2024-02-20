@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61C21C502B84BD5700A6D70A /* onlineshoplibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C21C4F2B84BD5700A6D70A /* onlineshoplibrary.xcframework */; };
 		61C5BAE52B0E6A1500E1450A /* Onlin_ShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5BAE42B0E6A1500E1450A /* Onlin_ShopApp.swift */; };
 		61C5BAE72B0E6A1500E1450A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5BAE62B0E6A1500E1450A /* ContentView.swift */; };
 		61C5BAE92B0E6A1600E1450A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C5BAE82B0E6A1600E1450A /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61C21C4F2B84BD5700A6D70A /* onlineshoplibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = onlineshoplibrary.xcframework; sourceTree = "<group>"; };
 		61C5BAE12B0E6A1500E1450A /* Onlin Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Onlin Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C5BAE42B0E6A1500E1450A /* Onlin_ShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onlin_ShopApp.swift; sourceTree = "<group>"; };
 		61C5BAE62B0E6A1500E1450A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,12 +46,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C21C502B84BD5700A6D70A /* onlineshoplibrary.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61C21C442B84957300A6D70A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61C21C4F2B84BD5700A6D70A /* onlineshoplibrary.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		61C5BAD82B0E6A1400E1450A = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +80,7 @@
 		61C5BAE32B0E6A1500E1450A /* Onlin Shop */ = {
 			isa = PBXGroup;
 			children = (
+				61C21C442B84957300A6D70A /* Frameworks */,
 				61C5BB002B0E75D500E1450A /* View */,
 				61C5BAF82B0E702000E1450A /* ViewModel */,
 				61C5BAF22B0E6CB300E1450A /* Models */,

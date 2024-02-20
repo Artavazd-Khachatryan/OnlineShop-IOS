@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import onlineshoplibrary
 
 @main
 struct Onlin_ShopApp: App {
+    
+    init() {
+        KoinModulesKt.doInitKoin()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
