@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class OnlineshoplibraryKoin_coreKoin, OnlineshoplibraryLoadAllShoppesUseCase, OnlineshoplibraryKotlinx_coroutines_coreCoroutineDispatcher, OnlineshoplibraryProductEntity, OnlineshoplibraryShopEntity, OnlineshoplibraryTestDataSource, OnlineshoplibraryDispatcherProvider, OnlineshoplibraryKoin_coreModule, OnlineshoplibraryKoin_coreScope, OnlineshoplibraryKoin_coreParametersHolder, OnlineshoplibraryKotlinLazyThreadSafetyMode, OnlineshoplibraryKoin_coreLogger, OnlineshoplibraryKoin_coreInstanceRegistry, OnlineshoplibraryKoin_corePropertyRegistry, OnlineshoplibraryKoin_coreScopeRegistry, OnlineshoplibraryKotlinAbstractCoroutineContextElement, OnlineshoplibraryKotlinx_coroutines_coreCoroutineDispatcherKey, OnlineshoplibraryKoin_coreInstanceFactory<T>, OnlineshoplibraryKotlinPair<__covariant A, __covariant B>, OnlineshoplibraryKotlinArray<T>, OnlineshoplibraryKoin_coreScopeDSL, OnlineshoplibraryKoin_coreSingleInstanceFactory<T>, OnlineshoplibraryKoin_coreLockable, OnlineshoplibraryKoin_coreParametersHolderCompanion, OnlineshoplibraryKotlinEnumCompanion, OnlineshoplibraryKotlinEnum<E>, OnlineshoplibraryKoin_coreLevel, OnlineshoplibraryKoin_coreScopeRegistryCompanion, OnlineshoplibraryKotlinAbstractCoroutineContextKey<B, E>, OnlineshoplibraryKoin_coreBeanDefinition<T>, OnlineshoplibraryKoin_coreInstanceFactoryCompanion, OnlineshoplibraryKoin_coreInstanceContext, OnlineshoplibraryKoin_coreKind, OnlineshoplibraryKoin_coreCallbacks<T>;
+@class OnlineshoplibraryKoin_coreKoin, OnlineshoplibraryLoadAllProductsUseCase, OnlineshoplibraryLoadAllShoppesUseCase, OnlineshoplibraryKotlinx_coroutines_coreCoroutineDispatcher, OnlineshoplibraryProductEntity, OnlineshoplibraryShopEntity, OnlineshoplibraryTestDataSource, OnlineshoplibraryDispatcherProvider, OnlineshoplibraryKoin_coreKoinApplicationCompanion, OnlineshoplibraryKoin_coreKoinApplication, OnlineshoplibraryKoin_coreLogger, OnlineshoplibraryKoin_coreModule, OnlineshoplibraryKotlinArray<T>, OnlineshoplibraryKoin_coreLevel, OnlineshoplibraryKoin_coreScope, OnlineshoplibraryKoin_coreParametersHolder, OnlineshoplibraryKotlinLazyThreadSafetyMode, OnlineshoplibraryKoin_coreInstanceRegistry, OnlineshoplibraryKoin_corePropertyRegistry, OnlineshoplibraryKoin_coreScopeRegistry, OnlineshoplibraryKotlinAbstractCoroutineContextElement, OnlineshoplibraryKotlinx_coroutines_coreCoroutineDispatcherKey, OnlineshoplibraryKoin_coreInstanceFactory<T>, OnlineshoplibraryKotlinPair<__covariant A, __covariant B>, OnlineshoplibraryKoin_coreScopeDSL, OnlineshoplibraryKoin_coreSingleInstanceFactory<T>, OnlineshoplibraryKotlinEnumCompanion, OnlineshoplibraryKotlinEnum<E>, OnlineshoplibraryKoin_coreLockable, OnlineshoplibraryKoin_coreParametersHolderCompanion, OnlineshoplibraryKoin_coreScopeRegistryCompanion, OnlineshoplibraryKotlinAbstractCoroutineContextKey<B, E>, OnlineshoplibraryKoin_coreBeanDefinition<T>, OnlineshoplibraryKoin_coreInstanceFactoryCompanion, OnlineshoplibraryKoin_coreInstanceContext, OnlineshoplibraryKoin_coreKind, OnlineshoplibraryKoin_coreCallbacks<T>;
 
-@protocol OnlineshoplibraryKoin_coreKoinComponent, OnlineshoplibraryPlatform, OnlineshoplibraryProductRepository, OnlineshoplibraryShopRepository, OnlineshoplibraryKoin_coreKoinScopeComponent, OnlineshoplibraryKoin_coreQualifier, OnlineshoplibraryKotlinKClass, OnlineshoplibraryKotlinLazy, OnlineshoplibraryKotlinCoroutineContextKey, OnlineshoplibraryKotlinCoroutineContextElement, OnlineshoplibraryKotlinCoroutineContext, OnlineshoplibraryKotlinContinuation, OnlineshoplibraryKotlinContinuationInterceptor, OnlineshoplibraryKotlinx_coroutines_coreRunnable, OnlineshoplibraryKoin_coreScopeCallback, OnlineshoplibraryKotlinKDeclarationContainer, OnlineshoplibraryKotlinKAnnotatedElement, OnlineshoplibraryKotlinKClassifier, OnlineshoplibraryKotlinComparable, OnlineshoplibraryKotlinIterator;
+@protocol OnlineshoplibraryKoin_coreKoinComponent, OnlineshoplibraryPlatform, OnlineshoplibraryProductRepository, OnlineshoplibraryShopRepository, OnlineshoplibraryKoin_coreKoinScopeComponent, OnlineshoplibraryKoin_coreQualifier, OnlineshoplibraryKotlinKClass, OnlineshoplibraryKotlinLazy, OnlineshoplibraryKotlinCoroutineContextKey, OnlineshoplibraryKotlinCoroutineContextElement, OnlineshoplibraryKotlinCoroutineContext, OnlineshoplibraryKotlinContinuation, OnlineshoplibraryKotlinContinuationInterceptor, OnlineshoplibraryKotlinx_coroutines_coreRunnable, OnlineshoplibraryKotlinIterator, OnlineshoplibraryKotlinComparable, OnlineshoplibraryKoin_coreScopeCallback, OnlineshoplibraryKotlinKDeclarationContainer, OnlineshoplibraryKotlinKAnnotatedElement, OnlineshoplibraryKotlinKClassifier;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -155,6 +155,7 @@ __attribute__((swift_name("DIModelHelper")))
 @interface OnlineshoplibraryDIModelHelper : OnlineshoplibraryBase <OnlineshoplibraryKoin_coreKoinComponent>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (OnlineshoplibraryLoadAllProductsUseCase *)getLoadAllProductsUseCase __attribute__((swift_name("getLoadAllProductsUseCase()")));
 - (OnlineshoplibraryLoadAllShoppesUseCase *)getLoadAllShoppesUseCase __attribute__((swift_name("getLoadAllShoppesUseCase()")));
 @end
 
@@ -257,8 +258,10 @@ __attribute__((swift_name("NetworkShopRepository")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LoadAllProductsUseCase")))
 @interface OnlineshoplibraryLoadAllProductsUseCase : OnlineshoplibraryBase
-- (instancetype)initWithShopId:(int64_t)shopId productRepository:(id<OnlineshoplibraryProductRepository>)productRepository onSuccess:(void (^)(NSArray<OnlineshoplibraryProductEntity *> *))onSuccess onFail:(void (^)(void))onFail __attribute__((swift_name("init(shopId:productRepository:onSuccess:onFail:)"))) __attribute__((objc_designated_initializer));
-- (void)execute __attribute__((swift_name("execute()")));
+- (instancetype)initWithProductRepository:(id<OnlineshoplibraryProductRepository>)productRepository dispatcherProvider:(OnlineshoplibraryDispatcherProvider *)dispatcherProvider __attribute__((swift_name("init(productRepository:dispatcherProvider:)"))) __attribute__((objc_designated_initializer));
+- (void)executeShopId:(int64_t)shopId __attribute__((swift_name("execute(shopId:)")));
+@property void (^ _Nullable onFail)(void) __attribute__((swift_name("onFail")));
+@property void (^ _Nullable onSuccess)(NSArray<OnlineshoplibraryProductEntity *> *) __attribute__((swift_name("onSuccess")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -268,6 +271,28 @@ __attribute__((swift_name("LoadAllShoppesUseCase")))
 - (void)execute __attribute__((swift_name("execute()")));
 @property void (^ _Nullable onFail)(void) __attribute__((swift_name("onFail")));
 @property void (^ _Nullable onSuccess)(NSArray<OnlineshoplibraryShopEntity *> *) __attribute__((swift_name("onSuccess")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKoinApplication")))
+@interface OnlineshoplibraryKoin_coreKoinApplication : OnlineshoplibraryBase
+@property (class, readonly, getter=companion) OnlineshoplibraryKoin_coreKoinApplicationCompanion *companion __attribute__((swift_name("companion")));
+- (void)allowOverrideOverride:(BOOL)override __attribute__((swift_name("allowOverride(override:)")));
+- (void)close __attribute__((swift_name("close()")));
+- (void)createEagerInstances __attribute__((swift_name("createEagerInstances()")));
+- (OnlineshoplibraryKoin_coreKoinApplication *)loggerLogger:(OnlineshoplibraryKoin_coreLogger *)logger __attribute__((swift_name("logger(logger:)")));
+- (OnlineshoplibraryKoin_coreKoinApplication *)modulesModules:(OnlineshoplibraryKotlinArray<OnlineshoplibraryKoin_coreModule *> *)modules __attribute__((swift_name("modules(modules:)")));
+- (OnlineshoplibraryKoin_coreKoinApplication *)modulesModules_:(NSArray<OnlineshoplibraryKoin_coreModule *> *)modules __attribute__((swift_name("modules(modules_:)")));
+- (OnlineshoplibraryKoin_coreKoinApplication *)modulesModules__:(OnlineshoplibraryKoin_coreModule *)modules __attribute__((swift_name("modules(modules__:)")));
+- (OnlineshoplibraryKoin_coreKoinApplication *)printLoggerLevel:(OnlineshoplibraryKoin_coreLevel *)level __attribute__((swift_name("printLogger(level:)")));
+- (OnlineshoplibraryKoin_coreKoinApplication *)propertiesValues:(NSDictionary<NSString *, id> *)values __attribute__((swift_name("properties(values:)")));
+- (void)unloadModulesModules:(NSArray<OnlineshoplibraryKoin_coreModule *> *)modules __attribute__((swift_name("unloadModules(modules:)")));
+- (void)unloadModulesModule:(OnlineshoplibraryKoin_coreModule *)module __attribute__((swift_name("unloadModules(module:)")));
+@property (readonly) OnlineshoplibraryKoin_coreKoin *koin __attribute__((swift_name("koin")));
+@end
+
+@interface OnlineshoplibraryKoin_coreKoinApplication (Extensions)
+- (OnlineshoplibraryKoin_coreKoinApplication *)koinModules __attribute__((swift_name("koinModules()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -386,6 +411,28 @@ __attribute__((swift_name("Kotlinx_coroutines_coreCoroutineDispatcher")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKoinApplication.Companion")))
+@interface OnlineshoplibraryKoin_coreKoinApplicationCompanion : OnlineshoplibraryBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) OnlineshoplibraryKoin_coreKoinApplicationCompanion *shared __attribute__((swift_name("shared")));
+- (OnlineshoplibraryKoin_coreKoinApplication *)doInit __attribute__((swift_name("doInit()")));
+@end
+
+__attribute__((swift_name("Koin_coreLogger")))
+@interface OnlineshoplibraryKoin_coreLogger : OnlineshoplibraryBase
+- (instancetype)initWithLevel:(OnlineshoplibraryKoin_coreLevel *)level __attribute__((swift_name("init(level:)"))) __attribute__((objc_designated_initializer));
+- (void)debugMsg:(NSString *)msg __attribute__((swift_name("debug(msg:)")));
+- (void)errorMsg:(NSString *)msg __attribute__((swift_name("error(msg:)")));
+- (void)infoMsg:(NSString *)msg __attribute__((swift_name("info(msg:)")));
+- (BOOL)isAtLvl:(OnlineshoplibraryKoin_coreLevel *)lvl __attribute__((swift_name("isAt(lvl:)")));
+- (void)logLvl:(OnlineshoplibraryKoin_coreLevel *)lvl msg:(NSString *(^)(void))msg __attribute__((swift_name("log(lvl:msg:)")));
+- (void)logLevel:(OnlineshoplibraryKoin_coreLevel *)level msg:(NSString *)msg __attribute__((swift_name("log(level:msg:)")));
+@property OnlineshoplibraryKoin_coreLevel *level __attribute__((swift_name("level")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Koin_coreModule")))
 @interface OnlineshoplibraryKoin_coreModule : OnlineshoplibraryBase
 - (instancetype)initWith_createdAtStart:(BOOL)_createdAtStart __attribute__((swift_name("init(_createdAtStart:)"))) __attribute__((objc_designated_initializer));
@@ -402,6 +449,49 @@ __attribute__((swift_name("Koin_coreModule")))
 @property (readonly) OnlineshoplibraryMutableSet<OnlineshoplibraryKoin_coreSingleInstanceFactory<id> *> *eagerInstances __attribute__((swift_name("eagerInstances")));
 @property (readonly) NSString *id __attribute__((swift_name("id")));
 @property (readonly) BOOL isLoaded __attribute__((swift_name("isLoaded")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinArray")))
+@interface OnlineshoplibraryKotlinArray<T> : OnlineshoplibraryBase
++ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(OnlineshoplibraryInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (id<OnlineshoplibraryKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end
+
+__attribute__((swift_name("KotlinComparable")))
+@protocol OnlineshoplibraryKotlinComparable
+@required
+- (int32_t)compareToOther:(id _Nullable)other __attribute__((swift_name("compareTo(other:)")));
+@end
+
+__attribute__((swift_name("KotlinEnum")))
+@interface OnlineshoplibraryKotlinEnum<E> : OnlineshoplibraryBase <OnlineshoplibraryKotlinComparable>
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) OnlineshoplibraryKotlinEnumCompanion *companion __attribute__((swift_name("companion")));
+- (int32_t)compareToOther:(E)other __attribute__((swift_name("compareTo(other:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) int32_t ordinal __attribute__((swift_name("ordinal")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreLevel")))
+@interface OnlineshoplibraryKoin_coreLevel : OnlineshoplibraryKotlinEnum<OnlineshoplibraryKoin_coreLevel *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) OnlineshoplibraryKoin_coreLevel *debug __attribute__((swift_name("debug")));
+@property (class, readonly) OnlineshoplibraryKoin_coreLevel *info __attribute__((swift_name("info")));
+@property (class, readonly) OnlineshoplibraryKoin_coreLevel *error __attribute__((swift_name("error")));
+@property (class, readonly) OnlineshoplibraryKoin_coreLevel *none __attribute__((swift_name("none")));
++ (OnlineshoplibraryKotlinArray<OnlineshoplibraryKoin_coreLevel *> *)values __attribute__((swift_name("values()")));
 @end
 
 __attribute__((swift_name("Koin_coreLockable")))
@@ -527,24 +617,6 @@ __attribute__((swift_name("KotlinLazy")))
 @property (readonly) id _Nullable value __attribute__((swift_name("value")));
 @end
 
-__attribute__((swift_name("KotlinComparable")))
-@protocol OnlineshoplibraryKotlinComparable
-@required
-- (int32_t)compareToOther:(id _Nullable)other __attribute__((swift_name("compareTo(other:)")));
-@end
-
-__attribute__((swift_name("KotlinEnum")))
-@interface OnlineshoplibraryKotlinEnum<E> : OnlineshoplibraryBase <OnlineshoplibraryKotlinComparable>
-- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) OnlineshoplibraryKotlinEnumCompanion *companion __attribute__((swift_name("companion")));
-- (int32_t)compareToOther:(E)other __attribute__((swift_name("compareTo(other:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@property (readonly) int32_t ordinal __attribute__((swift_name("ordinal")));
-@end
-
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinLazyThreadSafetyMode")))
 @interface OnlineshoplibraryKotlinLazyThreadSafetyMode : OnlineshoplibraryKotlinEnum<OnlineshoplibraryKotlinLazyThreadSafetyMode *>
@@ -556,18 +628,6 @@ __attribute__((swift_name("KotlinLazyThreadSafetyMode")))
 @property (class, readonly) OnlineshoplibraryKotlinLazyThreadSafetyMode *none __attribute__((swift_name("none")));
 + (OnlineshoplibraryKotlinArray<OnlineshoplibraryKotlinLazyThreadSafetyMode *> *)values __attribute__((swift_name("values()")));
 @property (class, readonly) NSArray<OnlineshoplibraryKotlinLazyThreadSafetyMode *> *entries __attribute__((swift_name("entries")));
-@end
-
-__attribute__((swift_name("Koin_coreLogger")))
-@interface OnlineshoplibraryKoin_coreLogger : OnlineshoplibraryBase
-- (instancetype)initWithLevel:(OnlineshoplibraryKoin_coreLevel *)level __attribute__((swift_name("init(level:)"))) __attribute__((objc_designated_initializer));
-- (void)debugMsg:(NSString *)msg __attribute__((swift_name("debug(msg:)")));
-- (void)errorMsg:(NSString *)msg __attribute__((swift_name("error(msg:)")));
-- (void)infoMsg:(NSString *)msg __attribute__((swift_name("info(msg:)")));
-- (BOOL)isAtLvl:(OnlineshoplibraryKoin_coreLevel *)lvl __attribute__((swift_name("isAt(lvl:)")));
-- (void)logLvl:(OnlineshoplibraryKoin_coreLevel *)lvl msg:(NSString *(^)(void))msg __attribute__((swift_name("log(lvl:msg:)")));
-- (void)logLevel:(OnlineshoplibraryKoin_coreLevel *)level msg:(NSString *)msg __attribute__((swift_name("log(level:msg:)")));
-@property OnlineshoplibraryKoin_coreLevel *level __attribute__((swift_name("level")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -676,18 +736,6 @@ __attribute__((swift_name("KotlinPair")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinArray")))
-@interface OnlineshoplibraryKotlinArray<T> : OnlineshoplibraryBase
-+ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(OnlineshoplibraryInt *))init __attribute__((swift_name("init(size:init:)")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
-- (id<OnlineshoplibraryKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
-- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
-@property (readonly) int32_t size __attribute__((swift_name("size")));
-@end
-
-__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Koin_coreScopeDSL")))
 @interface OnlineshoplibraryKoin_coreScopeDSL : OnlineshoplibraryBase
 - (instancetype)initWithScopeQualifier:(id<OnlineshoplibraryKoin_coreQualifier>)scopeQualifier module:(OnlineshoplibraryKoin_coreModule *)module __attribute__((swift_name("init(scopeQualifier:module:)"))) __attribute__((objc_designated_initializer));
@@ -709,6 +757,22 @@ __attribute__((swift_name("Koin_coreSingleInstanceFactory")))
 - (BOOL)isCreatedContext:(OnlineshoplibraryKoin_coreInstanceContext * _Nullable)context __attribute__((swift_name("isCreated(context:)")));
 @end
 
+__attribute__((swift_name("KotlinIterator")))
+@protocol OnlineshoplibraryKotlinIterator
+@required
+- (BOOL)hasNext __attribute__((swift_name("hasNext()")));
+- (id _Nullable)next __attribute__((swift_name("next()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinEnumCompanion")))
+@interface OnlineshoplibraryKotlinEnumCompanion : OnlineshoplibraryBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) OnlineshoplibraryKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
+@end
+
 __attribute__((swift_name("Koin_coreScopeCallback")))
 @protocol OnlineshoplibraryKoin_coreScopeCallback
 @required
@@ -723,28 +787,6 @@ __attribute__((swift_name("Koin_coreParametersHolder.Companion")))
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) OnlineshoplibraryKoin_coreParametersHolderCompanion *shared __attribute__((swift_name("shared")));
 @property (readonly) int32_t MAX_PARAMS __attribute__((swift_name("MAX_PARAMS")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinEnumCompanion")))
-@interface OnlineshoplibraryKotlinEnumCompanion : OnlineshoplibraryBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) OnlineshoplibraryKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Koin_coreLevel")))
-@interface OnlineshoplibraryKoin_coreLevel : OnlineshoplibraryKotlinEnum<OnlineshoplibraryKoin_coreLevel *>
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-@property (class, readonly) OnlineshoplibraryKoin_coreLevel *debug __attribute__((swift_name("debug")));
-@property (class, readonly) OnlineshoplibraryKoin_coreLevel *info __attribute__((swift_name("info")));
-@property (class, readonly) OnlineshoplibraryKoin_coreLevel *error __attribute__((swift_name("error")));
-@property (class, readonly) OnlineshoplibraryKoin_coreLevel *none __attribute__((swift_name("none")));
-+ (OnlineshoplibraryKotlinArray<OnlineshoplibraryKoin_coreLevel *> *)values __attribute__((swift_name("values()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -792,13 +834,6 @@ __attribute__((swift_name("Koin_coreInstanceContext")))
 @property (readonly) OnlineshoplibraryKoin_coreKoin *koin __attribute__((swift_name("koin")));
 @property (readonly) OnlineshoplibraryKoin_coreParametersHolder * _Nullable parameters __attribute__((swift_name("parameters")));
 @property (readonly) OnlineshoplibraryKoin_coreScope *scope __attribute__((swift_name("scope")));
-@end
-
-__attribute__((swift_name("KotlinIterator")))
-@protocol OnlineshoplibraryKotlinIterator
-@required
-- (BOOL)hasNext __attribute__((swift_name("hasNext()")));
-- (id _Nullable)next __attribute__((swift_name("next()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
